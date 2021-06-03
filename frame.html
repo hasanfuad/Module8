@@ -19,6 +19,7 @@
             border-radius: 3px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
 
         .photo-frame .photo img{
@@ -35,10 +36,15 @@
 
         .photo-frame:hover .photo-detail{
             display: block;
-            padding: 5px;
+            padding: 5px; 
             color: rgb(240, 219, 30);
             background-color: rgb(194, 240, 240, 0.5);
             font-size: 15px;
+        }
+
+        .photo-frame:hover img{
+            transform: scale(1.2);
+            transition: transform 1s ease-in-out 0.2s;
         }
 
         .photo-frame:hover .photo-detail h4{
